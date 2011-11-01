@@ -1,0 +1,8 @@
+public static function convertToNumber(currencyString:String):Number{
+				for(var i:int=0;i<currencyString.length;i++){
+				  if(currencyString.charAt(i)>= String.fromCharCode(48) && currencyString.charAt(i)<= String.fromCharCode(57))
+					  break;
+				}
+				var amount:String=currencyString.substring(i,currencyString.length);
+				return parseFloat(amount);
+			}
